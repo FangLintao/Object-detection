@@ -52,7 +52,7 @@ class Nearest_Neighbor:
         MSE_loss = nn.MSELoss()
         LOSS = 0
         for i in nnb:
-            Loss = MSE_loss(nnb[i][0][0], nnb[i][0][1])
+            Loss = MSE_loss(i[0][0], i[0][1])
             LOSS += Loss
         LOSS = LOSS / number
         return LOSS
