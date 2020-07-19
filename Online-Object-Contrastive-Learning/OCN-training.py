@@ -55,6 +55,7 @@ def train(num_epoch, learning_rate = 2.5e-4, model_dir="./saved_models", tensorb
         folder,num = batch
         # reading training data
         train_data = datareading.data_reading(trainset[folder],transform)
+        val_data = datareading.data_reading(valset['Frame_video-(160, 200).mp4'],transform)
         length = len(train_data)
 
         network = OCN(freeze_FasterRCNN = True,criterion=0.9).cuda()
@@ -93,7 +94,6 @@ def train(num_epoch, learning_rate = 2.5e-4, model_dir="./saved_models", tensorb
             tensorboard_Training_Loss.write_episode_data(epoch,{"Train_Loss":train_loss})
             
             with torch.no_grad():
-                val_data = datareading.data_reading(valset['Frame_video-(160, 200).mp4'],transform)
                 length = len(val_data)
                 val_loss = 0
                 val_count = 0
