@@ -1,4 +1,4 @@
-# Online Object Representations with Contrastive Learning [Currently working on]  
+# Online Object Representations with Contrastive Learning
 ![image](https://github.com/FangLintao/Object-detection/blob/master/Online-Object-Contrastive-Learning/images/cover.png)  
 ## 1. Introduction  
 Online Object Representations with Contrastive Learning, as self-supervised method, aims to detect objects and contrast objects' similarity on their appearance by online representation. The main reference paper is [" Online Object Representations with Contrastive Learning "](https://online-objects.github.io/)
