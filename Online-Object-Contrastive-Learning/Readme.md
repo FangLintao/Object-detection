@@ -58,7 +58,9 @@ Input: [2048,1,1]
 Layer: one fully connected layer  
 ### 3.2 Loss
 ![image](https://github.com/FangLintao/Object-detection/blob/master/Online-Object-Contrastive-Learning/images/2.png)  
-## Training & Testing
-## Result
+## Implementation
+
+        OCN-training.py
+
 ## Reference
 Ⅰ. "Online Object Representations with Contrastive Learning", section "3.3. Architecture and Embedding Space",Sören Pirk, Mohi Khansari, Yunfei Bai, Corey Lynch, Pierre Sermanet,Google Brain,[CS.CV] 10/Jun/2019  
